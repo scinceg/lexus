@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Devanagari+Sanskrit&display=swap');
+
+.rev_slider .slide img{
+    width: 100%;
+    height: 500px;
+}
+
+.slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(56, 55, 55, 0.5);
+    z-index: 2;
+  }
+
+
+#text-slide-1 {
+    position: absolute;
+    right: 8%;
+    top: 125px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
+    opacity: 0.9;
+    text-align: center;
+    width: 600px;
+    z-index:4;
+}
+
+#text-slide-3 {
+    position: absolute;
+    left: 16%;
+    top: 140px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
+    opacity: 0.9;
+    text-align: center;
+    z-index:4;
+    width: 850px;
+}
+
+#text-slide-2 {
+    position: absolute;
+    right: 3%;
+    top: 30px;
+    color: white;
+    line-height: 150%;
+    font-size: 25px;
+    opacity: 0.9;
+    text-align: center;
+    z-index:4;
+    width: 600px;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(252, 252, 252);
+    font-family: 'Arial';
+}
+
+header {
+    height: 60px;
+    background-color: #ffffff;
+    /* color: #33348e; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header:before {
+    content: " ";
+    height: 60px;
+    left: 0;
+    top: 0;
+    width: 35%;
+    background: #2c2b2b;
+    transform-origin: bottom ;
+    transform: skew(40deg, 0deg);
+    display: block;
+    position: absolute;
+}
+
+/* header:after {
+    content: ' ';
+    height: 60px;
+    width: 50px;
+    background:rgb(13, 13, 13);
+    background-position: left top;
+    position: absolute;
+    transform-origin: bottom left;
+    transform: skew(40deg, 0deg);
+    left: 30%;
+    top: 0px;
+} */
+
+header img {
+    width: 160px;
+    height: 40px;
+    z-index: 3;
+}
+
+header h1 {
+    font-size: 37px;
+    z-index: 4;
+    color: white;
+    letter-spacing: 8px;
+}
+
+header nav{
+    display: flex;
+    font-family: 'Arial';
+    /* font-family: 'Quintessential', cursive; */
+    font-weight: 300;
+    width: 50%;
+    justify-content: space-between;
+    color: black;   
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+	position: relative;
+}
+
+
+header a:before {
+	position: absolute;
+	top: 20px;
+	content: "";
+	border-bottom: 1px solid black;
+	transform: scale(0,1);
+	width:100%;
+	transition: transform 0.3s
+}
+
+header a:hover:before{
+    padding: 0px;
+    margin: 0px;
+	transform: scale(1,1);
+ }
+
+#welcome {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+  
+.welcom-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.welcom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+
+#services {
+    margin-top: 70px;
+}
+  
+#card.img {
+    margin-bottom: 0px;
+}
+
+.welcom-text {
+    text-align: center;
+  }
+  
+.welcom-text hr{
+    width: 56px;
+    height: 0.1px;
+    background-color: black;
+    margin: 35px auto;
+}
+#wel-card img{
+    width: 23%;
+}
+#wel-card{
+    margin-top:20px ;
+}
+
+#impreva {
+    width: 400px;
+}
+
+.cards{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hr{
+    display: flex;
+    width:15% ;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 0px;
+    align-items: center;
+}
+
+#great {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+#first-hr hr{
+    width: 70px;
+}
+
+#first-hr {
+    width: 18%;
+}
+
+.partner-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.partner-card {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.partner-card img {
+    width: 20%;
+}
+
+.services-wrapper {
+    width: 80%;
+    margin:0 auto;
+}
+
+.services-text {
+   text-align: center; 
+   margin-top: 50px;
+}
+
+.services-cards {
+    margin-top: 50px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .services-cards p, h1 {
+    font-size: 13px;
+    padding: 0 7px
+} */
+
+.cards-row .card {
+    box-shadow: 0 0 15px 0 #999;
+    background-color: white;
+    width: 31%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.cards-row .card:hover {
+    transform: scale(1.1);
+    transition: 1s ease all;
+}
+
+.card p {
+    line-height: 130%;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+.footer {
+    /* background: linear-gradient(90deg,
+     rgba(2,0,36,1) 0%,
+     rgba(9,9,121,1) 0%,
+      rgba(24,35,175,1) 10%, 
+     rgba(12,37,148,1) 23%,
+      rgba(94,109,168,1) 40%,
+     rgba(96,8,139,1) 73%,
+      rgba(71,61,169,1) 89%,
+      rgba(0,212,255,1) 99%);
+    color: white !important; */
+    background: #2c2b2b;
+  }
+  
+  .footer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 75px 0;
+  }
+  
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .description {
+    width: 35%;
+  }
+  
+  .description p {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .description img {
+    width: 200px;
+    margin-bottom: 16px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .links {
+    width: 15%;
+  }
+  
+  .links ul {
+    line-height: 1.5;
+  }
+  
+  .links ul li {
+    margin-bottom: 15px;
+  }
+  h2 {
+      color: white;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+  }
